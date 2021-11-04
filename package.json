@@ -1,0 +1,69 @@
+{
+  "name": "nextjs-ts-base",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "lint": "eslint \"{pages,lib,components}/**\" --fix",
+    "format": "prettier \"{pages,lib,components}/**\" --write",
+    "test": "jest",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "prepare": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "*.{ts,tsx}": [
+        "eslint --cache --fix"
+      ],
+      "**/*.+(ts|tsx|json|css)": [
+        "prettier --write"
+      ]
+    }
+  },
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "4.0.3",
+    "date-fns": "2.25.0",
+    "gray-matter": "4.0.3",
+    "next": "12.0.2",
+    "postcss-preset-env": "6.7.0",
+    "prettier": "2.4.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "remark": "14.0.1",
+    "remark-html": "15.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^8.11.0",
+    "@testing-library/jest-dom": "^5.15.0",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.11.6",
+    "@types/react": "^17.0.34",
+    "@types/testing-library__jest-dom": "5.14.1",
+    "@types/testing-library__react": "10.2.0",
+    "@typescript-eslint/eslint-plugin": "5.3.0",
+    "@typescript-eslint/parser": "5.3.0",
+    "autoprefixer": "10.4.0",
+    "babel-jest": "^27.3.1",
+    "eslint": "8.1.0",
+    "eslint-config-next": "12.0.2",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-loader": "4.0.2",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-react": "7.26.1",
+    "husky": "7.0.4",
+    "jest": "^27.3.1",
+    "lint-staged": "11.2.6",
+    "postcss": "8.3.11",
+    "tailwindcss": "2.2.19",
+    "ts-jest": "27.0.7",
+    "typescript": "^4.4.4"
+  }
+}
