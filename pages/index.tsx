@@ -4,16 +4,14 @@ export default function Home() {
   return (
     <div className="flex items-center justify-center h-screen background">
       <Head>
-        <title>Awesome Nextjs Example</title>
+        <title>Jice.cl</title>
       </Head>
       <section className="p-8 rounded bg-yellow-50 mx-4">
         <h1 className="text-center mb-8">
           <span className="block text-xl text-gray-600 leading-tight">
             Welcome to this
           </span>
-          <span className="block text-5xl font-bold leading-none">
-            Awesome Nextjs Example
-          </span>
+          <span className="block text-5xl font-bold leading-none">Jice.cl</span>
         </h1>
         <div>
           <p className="my-2">How to use this example:</p>
