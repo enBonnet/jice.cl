@@ -1,6 +1,6 @@
 const BarCard = () => {
   return (
-    <div className="container mx-auto bg-white shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300">
+    <div className="container mx-auto bg-white shadow-lg rounded max-w-md hover:shadow-2xl transition duration-300">
       <a href="#">
         <img
           className="rounded-t-lg"
@@ -20,7 +20,7 @@ const BarCard = () => {
         </p>
         <div className="flex justify-end">
           <a
-            className="text-white bg-yellow-700 hover:bg-yellow-800 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center"
+            className="text-white bg-yellow-700 hover:bg-yellow-800 focus:ring-4 focus:ring-yellow-300 font-medium rounded text-sm px-3 py-2 text-center inline-flex items-center"
             href="#"
           >
             Visitar
