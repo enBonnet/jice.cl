@@ -7,7 +7,7 @@ interface HeadProps {
 const HeadContainer = ({ children }: HeadProps) => {
   return (
     <Head>
-      <title>Jice.cl - {children}</title>
+      <title>Barra.cafe - {children}</title>
     </Head>
   );
 };
