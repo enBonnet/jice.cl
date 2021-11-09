@@ -1,12 +1,10 @@
+import Link from "next/link";
+
 const BarCard = () => {
   return (
-    <div className="container mx-auto bg-white shadow-lg rounded max-w-md hover:shadow-2xl transition duration-300">
+    <div className="container mx-auto bg-white shadow-lg rounded max-w-md hover:shadow-2xl transition duration-300 overflow-hidden">
       <a href="#">
-        <img
-          className="rounded-t-lg"
-          src="https://flowbite.com/docs/images/blog/image-1.jpg"
-          alt=""
-        />
+        <img src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="" />
       </a>
       <div className="p-5">
         <a href="#">
@@ -19,12 +17,11 @@ const BarCard = () => {
           far, in reverse chronological order.
         </p>
         <div className="flex justify-end">
-          <a
-            className="text-white bg-yellow-700 hover:bg-yellow-800 focus:ring-4 focus:ring-yellow-300 font-medium rounded text-sm px-3 py-2 text-center inline-flex items-center"
-            href="#"
-          >
-            Visitar
-          </a>
+          <Link href="/bistro/enbonnet">
+            <a className="text-white bg-yellow-700 hover:bg-yellow-800 focus:ring-4 focus:ring-yellow-300 font-medium rounded text-sm px-3 py-2 text-center inline-flex items-center">
+              Visitar
+            </a>
+          </Link>
         </div>
       </div>
     </div>

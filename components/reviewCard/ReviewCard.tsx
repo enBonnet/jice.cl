@@ -2,13 +2,9 @@ import { UserCard } from "components/userCard";
 
 const ReviewCard = () => {
   return (
-    <article className="container mx-auto bg-white shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300">
+    <article className="container mx-auto bg-white shadow-lg rounded-lg max-w-md hover:shadow-2xl transition duration-300 overflow-hidden">
       <a href="#">
-        <img
-          className="rounded-t-lg"
-          src="https://flowbite.com/docs/images/blog/image-1.jpg"
-          alt=""
-        />
+        <img src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="" />
       </a>
       <div className="p-5">
         <a href="#">

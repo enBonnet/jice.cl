@@ -2,7 +2,7 @@ import { UserCard } from "components/userCard";
 
 const ReviewItem = () => {
   return (
-    <article className="mb-4 pb-4 border-b last:border-b-0 border-gray-400">
+    <article className="mb-4 pb-4 border-b last:border-b-0 sm:border-b-0 border-gray-400">
       <div className="mb-4">
         <a href="#">
           <img src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="" />
